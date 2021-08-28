@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="bah.css" media="screen">
+
+    <title>Legends Formulario</title>
+
+ </head>
+    <body>
+    <div class="ss">        
+        <div>  
+            <h1 id="titulo">Formulario</h1>
+            <p  id="subtitulo">Bem-vindo(a) ao formulario para STAFF do LegendsRP.</p>
+            <br>
+        </div>
+            <fieldset class="grupo">
+                <form>
+                    <div class="campo">
+                        <label for="nome"><strong>Nome:</strong></label>
+                        <input type="text" name="nome" id="nome" required>         
+                    </div>
+
+                    <div class="campo">
+                        <label for="sobrenome"><strong>Sobrenome:</strong></label>
+                        <input type="text" name="sobrenome" id="sobrenome"required>            
+                    </div>
+                </form>
+        </fieldset> 
+
+        <div class="campo">
+            <label for="email"><strong>Email:</strong></label>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <div class="campo">
+            <label><strong>Qual horario você está mais disponivel ?</strong></label>
+            <label>
+                <input type="radio" name="devweb" value="frontend" checked>Manhã
+            </label>
+
+            <label>
+                <input type="radio" name="devweb" value="backend">Tarde
+            </label>
+            
+            <lebel>
+                <input type="radio" name="devweb" value="fullstack">Noite
+            </lebel>
+        </div>
+
+        <div class="campo">
+            <lebel for="senioridade"><strong>Deseja ajudar mais aonde ?</strong></lebel>
+            <select id="senioridade">
+                <option selected disabled value="">Selecione</option>
+                <option>Discord</option>
+                <option>Cidade</option>
+                <option>Os dois</option>
+            </select>
+        </div>
+
+        <fieldset class="grupo">
+            <div id="check">
+                <label><strong>Selecione quais dessas opções você conhece/faz:</strong></label><br><br>
+                <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
+                <label for="tecnologia1">Programação</label>
+                <input type="checkbox" id="tecnologia2" name="tecnologia2" value="JavaScript">
+                <label for="tecnologia2">Designer</label>
+                <input type="checkbox" id="tecnologia3" name="tecnologia3" value="PHP">
+                <label for="tecnologia3">Criação de Conteudo</label>
+                <input type="checkbox" id="tecnologia4" name="tecnologia4" value="CSS">
+                <label for="tecnologia4">Administração</label>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <br>
+            <label><strong>Conte um o porque gostaria de fazer parte de nossa staff:</strong></label>
+            <textarea rows="8" style="width: 27em;" id="expeciencia" name="experiencia"></textarea>
+        </div>
+    </div>
+        <button class="botao" type="submit" onsubmit="">Concluído</button>
+    
+    </body>
+ </html>
